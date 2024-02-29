@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caterer View</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>Welcome to order scheduler</h1>
+    <h2>View Orders of the day</h2>
+
+    <form action="/seeAllOrdersTeam" method="POST">
+      <input type="submit" value="See Orders">
+    </form>
+
+    <div>
+      <% if(locals.order){ %>
+              <% for(let i = 0; i<order.length; i++){ %>
+                  <p>
+          <%=order[i].name%> <%=order[i].orders%> 
+                  </p>
+
+          <%}%>       
+      <%}%>    
+</div>
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+manager password: manager
+caterer password: team
