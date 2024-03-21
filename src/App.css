@@ -1,0 +1,16 @@
+.App {
+  background-color: aqua;
+}
+
+
+.table{
+  background-color: aqua;
+}
+
+.row{
+  display: block;
+}
+
+.box{
+  display: inline-block;
+}
