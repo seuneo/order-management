@@ -32,42 +32,42 @@ const orders=[
         key: 5,
         id: 5,
         name: "kunle",
-        order: "some food",
+        order: "chicken suya",
         contact: "64749835"
     },
     { 
         key: 6,
         id: 6,
         name: "princess",
-        order: "some food",
+        order: "zobo",
         contact: "64749835"
     },
     { 
         key: 7,
         id: 7,
         name: "sarah",
-        order: "some food",
+        order: "suya",
         contact: "64749835"
     },
     { 
         key: 8,
         id: 8,
         name: "victor",
-        order: "some food",
+        order: "puff puff",
         contact: "64749835"
     },
     { 
         key: 9,
         id: 9,
         name: "dolapo",
-        order: "some food",
+        order: "egg roll",
         contact: "64749835"
     },
     { 
         key: 10,
         id: 10,
         name: "olu",
-        order: "some food",
+        order: "cakes",
         contact: "64749835"
     }
 ];
