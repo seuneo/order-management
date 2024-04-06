@@ -2,17 +2,43 @@ body {
   
 width: 90%;
 
-
  margin: auto;
  margin-top: 30px;
  margin-left: 30px;
 }
 
 .table{
-  margin-top: 40px; 
+  font-size: 15px;
 }
 
 .orderform{
   width: 50%;
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading{  
+  font-size: 25px;  
+}
+
+#collapseform{
+  font-size: 13px;
+}
+
+.ordertablesection{
+  margin-top: 40px;  
+}
+body{
+  background-color: rgb(247, 250, 254);  
+}
+
+.table th{
+  background-color: rgb(247, 250, 254);
+}
+.paginate{
+  display: flex;
+  justify-content: center;
+}
