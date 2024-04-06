@@ -1,8 +1,5 @@
-
-//import orders from "../Tableinputs"
 import React, { useState, useEffect } from "react";
 import {Table} from "./Table";
-
 
 function Form(){
 
@@ -12,8 +9,8 @@ function Form(){
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
 
-const [currentPageNum, updateCurrentPageNum] = useState(1);
-const [pages, updatePages] = useState([1, 2, 3]);
+  const [currentPageNum, updateCurrentPageNum] = useState(1);
+  const [pages, updatePages] = useState([1, 2, 3]);
 
 
   useEffect(() => {
@@ -55,11 +52,6 @@ const [pages, updatePages] = useState([1, 2, 3]);
       
   }, []);
    
-  console.log(orderList);
-  console.log(pages);
-  console.log(id);
-  
-
   const day = new Date();
   const [row, setRow] = useState({
     id: id,
@@ -119,8 +111,6 @@ const [pages, updatePages] = useState([1, 2, 3]);
 
     e.preventDefault();
 
-    
-
     if(((row.name !== "" && row.contact !== "") && row.orders !== "") && row.id !== null ){
       
     updateId(id + 1);
@@ -167,8 +157,6 @@ const [pages, updatePages] = useState([1, 2, 3]);
   }
 
   //pagination
-
- 
   function getPages(p){
     var pages = [];
     var num = p % 10;
@@ -206,21 +194,6 @@ const [pages, updatePages] = useState([1, 2, 3]);
 
   
   }
-
-  /*
-  function pageClickNext(e){
-    e.preventDefault();
-    //update active to the next num, update to active+ 1
-    e.target.parentNode.parentNode.childNodes.forEach(page=> {
-      if(page.classList.contains("active")== true){
-        page.classList.remove("active");
-        page.nextSibling.classList.add("active");
-        
-      }
-  });
-    
-  }
-*/
 
   if (loading) {
     return <p>Data is loading...</p>;
