@@ -1,14 +1,20 @@
+import React, { useState } from "react";
+
 function Login(){
-    return <form action="/add" method="post">
-    <h1>Welcome to order scheduler</h1>
-    <div>
-      <input type="text" name="name" placeholder="username" />
-    </div>
-    <div>
-        <input type="password" name="password" placeholder="password" />
-    </div>
-    <button type="submit">Log In</button>
-  </form>;
+    return <div>
+  <h1>Welcome</h1>
+  <form autocomplete="off">
+  <div class="mb-3">
+    <label for="name" class="form-label">Username</label>
+    <input name="name" type="text" class="form-control" id="name" aria-describedby="name" />  
+  </div>
+  <div class="mb-3">
+    <label for="order" class="form-label">Password</label>
+    <input name="password" type="password" class="form-control" id="password" aria-describedby="password"/>    
+  </div>
+  <button  type="submit" class="btn btn-primary">Log In</button>
+  </form>
+  </div>;
   }
 
-  export default Login;
+  export {Login};
